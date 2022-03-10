@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Space+Mono:wght@400;700&display=swap');
+
+/* font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'Space Mono', monospace; */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    margin: 0px;
+}
+input[type="text"] {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 15vw;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vw;
+    }
+    .content {
+        background-color: white;
+        padding: 10vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        margin-bottom: 0px;
+    }
+    .title {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 3.7vw;
+    }
+    .price {
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        border-radius: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 6vw;
+    }
+    .bill {
+        border: 0px;
+        text-align: right;
+        background-color: hsl(189, 41%, 97%);
+        height: 80%;
+        width: 80%;
+        font-size: 12vw;
+        margin-right: 5vw;
+        outline: 0px;
+        color: hsl(183, 100%, 15%);
+    }
+    .tip-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5vw;
+        row-gap: 5vw;
+        justify-content: space-between;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    .tip {
+        background-color: hsl(183, 100%, 15%);
+        border: 0px;
+        width: 35vw;
+        height: 10vw;
+        border-radius: 2vw;
+    }
+    .dollar {
+        width: 7%;
+        margin-left: 5vw;
+    }
+    .custom {
+        background-color: hsl(189, 41%, 97%);
+        border: 0px;
+        width: 35vw;
+        height: 10vw;
+        border-radius: 2vw;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(184, 14%, 56%);
+        font-size: 5vw;
+    }
+    .tip-text-white {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(189, 41%, 97%);
+        font-size: 5vw;
+    }
+    .tip:hover {
+        background-color: hsl(172, 67%, 45%);
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+    .custom:hover {
+        background-color: hsl(184, 14%, 56%);
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+        color: hsl(189, 41%, 97%);
+        cursor: pointer;
+    }
+    .custom-number {
+        margin: auto;
+    }
+    .number-of-ppl {
+        border: 0px;
+        text-align: right;
+        background-color: hsl(189, 41%, 97%);
+        height: 80%;
+        width: 80%;
+        font-size: 12vw;
+        margin-right: 5vw;
+        outline: 0px;
+        color: hsl(183, 100%, 15%);
+    }
+    .person {
+        width: 7%;
+        margin-left: 5vw;
+    }
+    .summary {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vw;
+        margin: auto;
+        background-color: hsl(183, 100%, 15%);
+        padding-top: 7vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        border-radius: 2vw;
+    }
+    .summary-up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    p#tipamount, p#total {
+        font-size: 10vw;
+    }
+    .summary-down {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .reset {
+        background-color: hsl(172, 67%, 45%);
+        border: 0px;
+        width: 90%;
+        height: 10vw;
+        border-radius: 2vw;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(183, 100%, 15%);
+        font-size: 5vw;
+        margin: auto;
+    }
+    .summary p {
+        margin: 0;
+    }
+    .sum-title {
+        color: hsl(189, 41%, 97%);
+        font-size: 3.5vw;
+    }
+    .sum-subtitle {
+        color: hsl(184, 14%, 56%);
+        font-size: 3.5vw;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .logo {
+        width: 8vw;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vw;
+        margin-top: 5vw;
+    }
+    .content {
+        background-color: white;
+        border-radius: 3vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        padding: 2vw;
+        display: flex;
+        flex-direction: row;
+        column-gap: 1vw;
+    }
+    .content-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 1.6vw;
+    }
+    .price {
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-radius: 1vw;
+    }
+    .bill {
+        border: 0px;
+        text-align: right;
+        background-color: hsl(189, 41%, 97%);
+        font-size: 4vw;
+        margin-right: 5vw;
+        outline: 0px;
+        color: hsl(183, 100%, 15%);
+        width: 90%;
+        height: 5vw;
+    }
+    .dollar {
+        width: 1.2vw;
+        margin-left: 2vw;
+    }
+    .tip-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3vw;
+        row-gap: 3vw;
+        justify-content: center;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .tip {
+        background-color: hsl(183, 100%, 15%);
+        border: 0px;
+        width: 19vw;
+        height: 7vw;
+        border-radius: 0.7vw;
+    }
+    .custom {
+        background-color: hsl(189, 41%, 97%);
+        border: 0px;
+        width: 19vw;
+        height: 7vw;
+        border-radius: 0.7vw;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(184, 14%, 56%);
+        font-size: 3vw;
+    }
+    .tip-text-white {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(189, 41%, 97%);
+        font-size: 4vw;
+    }
+    .tip:hover {
+        background-color: hsl(172, 67%, 45%);
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+    .custom:hover {
+        background-color: hsl(184, 14%, 56%);
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+        color: hsl(189, 41%, 97%);
+        cursor: pointer;
+    }
+    .number-of-ppl {
+        border: 0px;
+        text-align: right;
+        background-color: hsl(189, 41%, 97%);
+        font-size: 4vw;
+        margin-right: 5vw;
+        outline: 0px;
+        color: hsl(183, 100%, 15%);
+        width: 90%;
+        height: 5vw;
+    }
+    .person {
+        width: 1.2vw;
+        margin-left: 2vw;
+    } 
+    .summary {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vw;
+        margin: auto;
+        background-color: hsl(183, 100%, 15%);
+        padding-top: 7vw;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        border-radius: 2vw;
+    }
+    .reset {
+        background-color: hsl(172, 67%, 45%);
+        border: 0px;
+        width: 90%;
+        height: 10vw;
+        border-radius: 2vw;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(183, 100%, 15%);
+        font-size: 5vw;
+        margin: auto;
+    }
+    .summary p {
+        margin: 0;
+    }
+    .sum-title {
+        color: hsl(189, 41%, 97%);
+        font-size: 3.5vw;
+    }
+    .sum-subtitle {
+        color: hsl(184, 14%, 56%);
+        font-size: 3.5vw;
+    } 
+}
