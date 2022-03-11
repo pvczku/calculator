@@ -164,6 +164,12 @@ input[type="text"] {
         font-size: 5vw;
         margin: auto;
     }
+    .reset:hover {
+        cursor: pointer;
+        background-color: hsl(172, 58%, 61%);
+        transition: ease-in-out;
+        transition-duration: 0.2s;
+    }
     .summary p {
         margin: 0;
     }
@@ -174,6 +180,9 @@ input[type="text"] {
     .sum-subtitle {
         color: hsl(184, 14%, 56%);
         font-size: 3.5vw;
+    }
+    p#total, p#tipamount {
+        color: hsl(172, 67%, 45%);
     }
 }
 @media only screen and (min-width: 600px) {

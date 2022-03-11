@@ -19,24 +19,24 @@
       <p class="title">Bill</p>
       <div class="price">
         <img class="dollar" src="./images/icon-dollar.svg" alt="dollar">
-        <input class="bill" type="number" placeholder="0" step="0.01" id="bill">
+        <input class="bill" type="number" placeholder="0" step="0.01" id="bill" oninput="tipNTotal()">
       </div>
       <p class="title">Select Tip %</p>
       <div class="tip-buttons">
         <div>
-          <button class="tip" onclick="calc(0.05)"><span class="tip-text-white">5%</span></button>
+          <button class="tip" onclick="percent(0.05)"><span class="tip-text-white">5%</span></button>
         </div>
         <div>
-          <button class="tip" onclick="calc(0.1)"><span class="tip-text-white">10%</span></button>
+          <button class="tip" onclick="percent(0.1)"><span class="tip-text-white">10%</span></button>
         </div>
         <div>
-          <button class="tip" onclick="calc(0.15)"><span class="tip-text-white">15%</span></button>
+          <button class="tip" onclick="percent(0.15)"><span class="tip-text-white">15%</span></button>
         </div>
         <div>
-          <button class="tip" onclick="calc(0.25)"><span class="tip-text-white">25%</span></button>
+          <button class="tip" onclick="percent(0.25)"><span class="tip-text-white">25%</span></button>
         </div>
         <div>
-          <button class="tip" onclick="calc(0.5)"><span class="tip-text-white">50%</span></button>
+          <button class="tip" onclick="percent(0.5)"><span class="tip-text-white">50%</span></button>
         </div>
         <div style="position: relative;">
           <button class="custom" onclick="showNumber()" id="custom">Custom</button>
@@ -49,7 +49,7 @@
       <p class="title">Number of People</p>
       <div class="price">
         <img class="person" src="./images/icon-person.svg" alt="person">
-        <input type="number" class="number-of-ppl" name="people" id="people" placeholder="0">
+        <input type="number" class="number-of-ppl" name="people" id="people" placeholder="0" oninput="tipNTotal()">
       </div>
     </div>
     <div class="summary">
@@ -68,10 +68,10 @@
           <p class="sum-subtitle">/ person</p>
         </div>
         <div>
-          <p id="total">a</p>
+          <p id="total">0.00$</p>
         </div>
       </div>
-      <button class="reset">RESET</button>
+      <button class="reset" onclick="reset()">RESET</button>
     </div>
   </div>
   <p id="wynik"></p>
